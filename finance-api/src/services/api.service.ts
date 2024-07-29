@@ -12,7 +12,7 @@ const ApiService: ServiceSchema<ApiSettingsSchema> = {
 		routes: [
 			{
 				path: '/',
-				whitelist: ['project.*'],
+				whitelist: ['finance.*'],
 				mergeParams: true,
 				autoAliases: true,
 				bodyParsers: {
