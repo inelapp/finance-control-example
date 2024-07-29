@@ -11,6 +11,7 @@ export interface CategoryProps {
 
 export class Category {
 	readonly id: string;
+
 	readonly props: CategoryProps;
 
 	constructor(props: CategoryProps, id?: string) {

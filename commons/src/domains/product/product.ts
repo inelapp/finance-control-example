@@ -12,6 +12,7 @@ export interface ProductProps {
 }
 export class Product {
 	readonly id: string;
+
 	readonly props: ProductProps;
 
 	constructor(props: ProductProps, id?: string) {
