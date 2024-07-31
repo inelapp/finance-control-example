@@ -24,13 +24,13 @@ const baseConfig = {
 const small = {
 	...baseConfig,
 	displayName: 'small',
-	testMatch: ['.test.ts']
+	testMatch: ['**.test.ts']
 };
 
 const medium = {
 	...baseConfig,
 	displayName: 'medium',
-	testMatch: ['.medium-test.ts', '/.medium-test.ts']
+	testMatch: ['**.medium-test.ts', '**/**.medium-test.ts']
 };
 
 module.exports = {
@@ -48,15 +48,15 @@ module.exports = {
 
 	// An array of glob patterns indicating a set of files for which coverage information should be collected
 	collectCoverageFrom: [
-		'////src/.ts',
-		'////src//.ts',
-		'!////src//**test.ts',
-		'!_tests_/',
-		'!scripts/',
-		'!////src//api.service.ts',
-		'!////src//project.service.ts'
+		'**/**/**/**/src/**.ts',
+		'**/**/**/**/src/**/**.ts',
+		'!**/**/**/**/src/**/**test.ts',
+		'!_tests_/**',
+		'!scripts/**',
+		'!**/**/**/**/src/**/api.service.ts',
+		'!**/**/**/**/src/**/project.service.ts'
 	],
-	coveragePathIgnorePatterns: ['scripts/'],
+	coveragePathIgnorePatterns: ['scripts/**'],
 
 	projects: [small, medium],
 	// Indicates whether each individual test should be reported during the run
