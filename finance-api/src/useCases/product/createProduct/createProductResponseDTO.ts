@@ -4,6 +4,7 @@ export interface CreateProductResponseDTO {
 	description: string;
 	price: number;
 	category: string;
+	quantity: number;
 	createdAt: Date;
 	updatedAt: Date;
 }
