@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "build": "cd ./__scripts__/ && bash build.sh",
-    "start": "cd ./finance-api && npm start"
+    "start": "cd ./finance-api && npm start",
+    "heroku-postbuild": "cd ./__scripts__/ && bash build.sh"
   }
 }
