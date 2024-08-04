@@ -9,7 +9,8 @@
     "dev": "ts-node -P tsconfig.json ../node_modules/moleculer/bin/moleculer-runner.js src/services/**/*.service.ts --config moleculer.config.ts --hot",
     "lint": "npx eslint --fix \"{src,apps,libs,test}/**/*.ts\" -c .eslintrc.js",
     "start": "moleculer-runner --config dist/moleculer.config.js dist/src/services/**/*.service.js",
-    "test:small": "jest --passWithNoTests --config=jest.config.js --selectProjects small --runInBand --detectOpenHandles --coverage"
+    "test:small": "jest --passWithNoTests --config=jest.config.js --selectProjects small --runInBand --detectOpenHandles --coverage",
+    "dev:up": "cd ../__scripts__/ && bash dev.up.sh"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.44.0",
